@@ -1,4 +1,5 @@
 import TextField from '../../shared/TextField/TextField';
+
 import Button from '../../shared/Button/Button';
 
 import useForm from '../../shared/hooks/useForm';
@@ -17,8 +18,14 @@ const LoginForm = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit} className={css.form}>
-      <TextField value={email} handleChange={handleChange} {...fields.email} />
       <TextField
+        className={css.textField}
+        value={email}
+        handleChange={handleChange}
+        {...fields.email}
+      />
+      <TextField
+        className={css.textField}
         value={password}
         handleChange={handleChange}
         {...fields.password}

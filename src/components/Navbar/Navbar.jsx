@@ -21,14 +21,14 @@ const Navbar = () => {
   ));
 
   return (
-    <div className={css.navbar}>
-      <NavLink to="/">Logo</NavLink>
+    <header className={css.header}>
+      {/* <NavLink to="/">Logo</NavLink> */}
 
       <ul className={css.menu}>{elements}</ul>
 
       {!isLogin && <NavbarAuth />}
       {isLogin && <UserMenu />}
-    </div>
+    </header>
   );
 };
 

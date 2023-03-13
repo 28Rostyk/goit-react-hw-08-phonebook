@@ -1,10 +1,10 @@
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  /* margin-left: 100px;
-  margin-right: 100px; */
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .menu {
@@ -23,4 +23,32 @@
 
 .link:global(.active) {
   font-weight: bold;
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #833ab4, #f50057, #fcb045, #b345fc)
+    47% 0%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #212121;
+}
+
+.link:global(.active) {
+  color: #f50057;
 }
