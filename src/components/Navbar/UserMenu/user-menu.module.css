@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.text {
+  margin-right: 5px;
+}
